@@ -179,6 +179,7 @@ function VariantOptions(params) {
       update_price_from_variants( variant.price );
 
       // $('#product-price .price').removeClass('unselected').text(variant.price);
+      $('#product-price .price').removeClass('unselected');
       
       if (variant.count > 0 || allow_backorders)
         $('#cart-form button[type=submit]').attr('disabled', false).fadeTo(100, 1);
